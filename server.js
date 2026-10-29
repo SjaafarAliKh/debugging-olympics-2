@@ -41,12 +41,12 @@ app.use(morgan('dev'))
 // Routes go here
 
 app.get('/',(req,res)=>{
-    res.render('homepage.ejs')    //er1
+    res.render('homepage.ejs')    //er2
 })
 
 
 
-app.get('/zaids', async (req,res)=>{       //er2
+app.get('/zaids', async (req,res)=>{       //er3
     const allZaids = await Zaid.find()
     res.render('all-zaids.ejs',{zaids: allZaids})
 })
