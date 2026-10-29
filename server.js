@@ -52,7 +52,7 @@ app.get('/zaids', async (req,res)=>{       //er3
 })
 
 app.get('/zaids/new', (res, req)=>{
-    res.render('./view/create-zaid.ejs')    //error view instead of views
+    res.render('create-zaid.ejs')    //error view instead of views
 })
 
 app.post('/zaids', async (req,res)=>{
