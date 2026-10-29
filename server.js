@@ -71,7 +71,7 @@ app.post('/zaids', async (req,res)=>{
 
 
 app.get('/zaids/:zaidId', async (req,res)=>{
-    const foundZaid = await Zaid.findById(req.params)
+    const foundZaid = await Zaid.findById(req.params.id) //err4
     res.render('zaid-details.ejs',{zaid: foundZaid})
 })
 
